@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Star Trek</title>
+		<script src="JS/one_page.js"></script>
 		<link rel="stylesheet" href="CSS/one_page_website.css">
 		<p class="head">Boldly Going Where No One has Gone Before<br>55 Years</p>
 	</head>
@@ -24,7 +25,7 @@
 				<div id="TOS">
 					<h1>The Original Series</h1>
 					<div>
-					<img src=" ./images/Thumbnails/TOS_crew1.jfif" alt="The crew of the Original Series">
+					
 						<div>
 							<p>Star Trek debuted on September 8, 1966</p>
 						</div>
@@ -38,13 +39,42 @@
 				<div id="TNG">
 					<h1>The Next Generation</h1>
 					<div>
-					<img src=" ./images/Thumbnails/TNG_crew1.jfif" alt="The crew of the Next Generation">
+					
 						<div>
 							<p>The Next Generation debuted on September 28, 1987</p>
 						</div>
 					</div>
 					<div>
 					<iframe src="https://www.dailymotion.com/video/x7s67a2" title="Darmok"></iframe>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="row">
+					<div class="column">
+						<img id="TNG" src=" ./images/Thumbnails/TNG_crew1.jfif" alt="The crew of the Next Generation" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img  id="TOS" src=" ./images/Thumbnails/TOS_crew1.jfif" alt="The crew of the Original Series" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+				</div>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<div class="numbertext">1/2</div>
+							<img src="./images/Thumbnails/TNG_crew1.jfif" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2/2</div>
+							<img src="./images/Thumbnails/TOS_crew1.jfif" style="width:100%">
+						</div>
+						<div class="column">
+							<img class="demo" src="./images/Thumbnails/TNG_crew1.jfif" onclick="currentSlide(1)" alt="TNG">
+						</div>
+						<div class="column">
+							<img class="demo" src="./images/Thumbnails/TOS_crew1.jfif" onclick="currentSlide(2)" alt="TOS">
+						</div>
 					</div>
 				</div>
 			</section>
